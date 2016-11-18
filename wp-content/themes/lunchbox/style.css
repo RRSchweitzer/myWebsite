@@ -1,0 +1,271 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+div {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif; }
+
+body html {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+#header {
+  z-index: 4;
+  background-color: white;
+  width: 100%;
+  height: 100px; }
+  #header #nav-wrap {
+    height: 100%; }
+    #header #nav-wrap .burger {
+      display: none; }
+    #header #nav-wrap .my-name {
+      position: absolute;
+      cursor: pointer;
+      height: 100%;
+      line-height: 100px;
+      left: 30px;
+      font-size: 30px; }
+    #header #nav-wrap .left-menu {
+      position: absolute;
+      height: 100%;
+      right: 30px;
+      font-size: 20px;
+      line-height: 100px; }
+      #header #nav-wrap .left-menu ul li {
+        list-style-type: none;
+        float: left;
+        margin: 0 10px;
+        cursor: pointer; }
+  #header.nav-up {
+    top: -100px; }
+
+#burger-nav {
+  position: fixed;
+  color: #818181;
+  background-color: #333;
+  height: 100%;
+  width: 250px;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding-top: 60px;
+  transition: 0.5s ease;
+  transform: translate(250px, 0); }
+  #burger-nav.active {
+    transform: translate(0, 0);
+    box-shadow: 0px 0px 50px black; }
+  #burger-nav .menu .close-button {
+    position: absolute;
+    font-size: 60px;
+    cursor: pointer;
+    left: 20px;
+    top: 0; }
+  #burger-nav .menu li {
+    display: block;
+    padding: 20px 8px 8px 50px;
+    font-size: 25px;
+    cursor: pointer; }
+    #burger-nav .menu li:hover {
+      color: #f1f1f1; }
+
+#side-nav {
+  position: fixed;
+  list-style-type: bullets;
+  top: 30%;
+  right: 0;
+  margin-right: 50px;
+  z-index: 1; }
+
+.dotstyle ul {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+.dotstyle li {
+  position: relative;
+  display: block;
+  margin: 16px 0;
+  width: 16px;
+  height: 16px;
+  cursor: pointer; }
+  .dotstyle li a {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 50%;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-indent: -999em;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2; }
+    .dotstyle li a:focus {
+      outline: none; }
+
+.dotstyle-fillin li a {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px white;
+  -webkit-transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease; }
+  .dotstyle-fillin li a:hover, .dotstyle-fillin li a:focus {
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6); }
+.dotstyle-fillin li.current a {
+  box-shadow: inset 0 0 0 8px white; }
+
+/* Circle grow */
+.dotstyle-circlegrow li a {
+  overflow: hidden;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px white;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+  .dotstyle-circlegrow li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease; }
+  .dotstyle-circlegrow li a:hover, .dotstyle-circlegrow li a:focus {
+    opacity: 0.7; }
+.dotstyle-circlegrow li.current a::after {
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
+#hero {
+  position: relative;
+  background-image: url(https://static.pexels.com/photos/115045/pexels-photo-115045.jpeg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 100px);
+  font-size: 6em; }
+  #hero:after {
+    content: "WEB DEVELOPER";
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(0, -50%);
+    color: white; }
+
+.content-row {
+  height: 45vh;
+  width: 100%;
+  position: relative; }
+  .content-row .content-text {
+    padding: 60px;
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+
+#thinker {
+  position: relative;
+  background-image: url(https://static.pexels.com/photos/33609/delicate-arch-sunset-rock-formation.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 80vh; }
+  #thinker:after {
+    content: "Bud Light Dicks";
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(0, -50%);
+    color: white;
+    font-size: 6em; }
+
+.third-image {
+  position: relative;
+  background-image: url(https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 80vh; }
+  .third-image:after {
+    content: "Crabwalking";
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(0, -50%);
+    color: white;
+    font-size: 6em; }
+
+#footer {
+  height: 300px;
+  background-color: #f5f5f5; }
+
+@media screen and (max-width: 720px) {
+  #header #nav-wrap {
+    height: 100%; }
+    #header #nav-wrap .my-name {
+      position: absolute;
+      cursor: pointer;
+      height: 100%;
+      line-height: 100px;
+      left: 30px;
+      font-size: 25px; }
+    #header #nav-wrap .burger {
+      display: block;
+      position: absolute;
+      cursor: pointer;
+      right: 25px;
+      line-height: 100px;
+      font-size: 30px; }
+    #header #nav-wrap .left-menu {
+      display: none; } }
+
+/*# sourceMappingURL=style.css.map */
