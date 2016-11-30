@@ -2,12 +2,11 @@
 /**
  * Created by PhpStorm.
  * User: Ryan1
- * Date: 11/17/16
- * Time: 9:05 PM
+ * Date: 11/29/16
+ * Time: 8:34 PM
  */
 
 ?>
-
 <?php get_header(); ?>
 <div id="hero" class"picture"></div>
 <div class="content-row">

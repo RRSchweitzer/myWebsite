@@ -51,10 +51,12 @@ body html {
     #header #nav-wrap .my-name {
       position: absolute;
       cursor: pointer;
-      height: 100%;
       line-height: 100px;
       left: 30px;
       font-size: 30px; }
+      #header #nav-wrap .my-name a {
+        text-decoration: none;
+        color: inherit; }
     #header #nav-wrap .left-menu {
       position: absolute;
       height: 100%;
@@ -66,6 +68,9 @@ body html {
         float: left;
         margin: 0 10px;
         cursor: pointer; }
+        #header #nav-wrap .left-menu ul li a {
+          text-decoration: none;
+          color: inherit; }
   #header.nav-up {
     top: -100px; }
 
@@ -181,13 +186,14 @@ body html {
 
 #hero {
   position: relative;
-  background-image: url(https://static.pexels.com/photos/115045/pexels-photo-115045.jpeg);
+  font-size: 6em;
+  background-image: url(/wp-admin/images/utah-hero.jpeg);
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
+  overflow: hidden;
   background-repeat: no-repeat;
-  height: calc(100vh - 100px);
-  font-size: 6em; }
+  height: calc(100vh - 100px); }
   #hero:after {
     content: "WEB DEVELOPER";
     position: absolute;
@@ -210,13 +216,13 @@ body html {
 
 #thinker {
   position: relative;
-  background-image: url(https://static.pexels.com/photos/33609/delicate-arch-sunset-rock-formation.jpg);
+  background-image: url(/wp-admin/images/rock-hero.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   height: 80vh; }
   #thinker:after {
-    content: "Bud Light Dicks";
+    content: "Something Here";
     position: absolute;
     font-weight: bold;
     top: 50%;
@@ -228,13 +234,13 @@ body html {
 
 .third-image {
   position: relative;
-  background-image: url(https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers.jpg);
+  background-image: url(/wp-admin/images/nyc-hero.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
   height: 80vh; }
   .third-image:after {
-    content: "Crabwalking";
+    content: "Hello";
     position: absolute;
     font-weight: bold;
     top: 50%;

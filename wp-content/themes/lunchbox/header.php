@@ -28,13 +28,13 @@
 
 <div id="header">
     <div id="nav-wrap">
-        <div class="my-name"><?php echo get_bloginfo('name'); ?></div>
+        <div class="my-name"><a href="/"><?php echo get_bloginfo('name'); ?></a></div>
         <div class="burger">&#9776;</div>
         <div class="left-menu">
             <ul>
-                <li><a>About</a></li>
-                <li><a>Experience</a></li>
-                <li><a>Contact</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/experience">Experience</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </div>
     </div>
