@@ -39,6 +39,10 @@ body html {
   margin: 0 !important;
   padding: 0 !important; }
 
+div {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif; }
+
 #header {
   z-index: 4;
   background-color: white;
@@ -149,13 +153,17 @@ body html {
 
 .dotstyle-fillin li a {
   background-color: transparent;
-  box-shadow: inset 0 0 0 2px white;
+  box-shadow: inset 0 0 0 2px black;
   -webkit-transition: box-shadow 0.3s ease;
   transition: box-shadow 0.3s ease; }
+  .dotstyle-fillin li a.turn-white {
+    box-shadow: inset 0 0 0 2px white; }
   .dotstyle-fillin li a:hover, .dotstyle-fillin li a:focus {
     box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6); }
 .dotstyle-fillin li.current a {
-  box-shadow: inset 0 0 0 8px white; }
+  box-shadow: inset 0 0 0 8px black; }
+  .dotstyle-fillin li.current a.turn-white {
+    box-shadow: inset 0 0 0 8px white; }
 
 /* Circle grow */
 .dotstyle-circlegrow li a {
@@ -186,14 +194,12 @@ body html {
 
 #hero {
   position: relative;
-  font-size: 6em;
-  background-image: url(/wp-admin/images/utah-hero.jpeg);
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  overflow: hidden;
   background-repeat: no-repeat;
-  height: calc(100vh - 100px); }
+  height: calc(100vh - 100px);
+  font-size: 6em; }
   #hero:after {
     content: "WEB DEVELOPER";
     position: absolute;
@@ -205,22 +211,26 @@ body html {
     color: white; }
 
 .content-row {
-  height: 45vh;
+  height: 300px;
   width: 100%;
   position: relative; }
   .content-row .content-text {
     padding: 60px;
     position: absolute;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    display: table; }
+    .content-row .content-text p {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center; }
 
 #thinker {
   position: relative;
-  background-image: url(/wp-admin/images/rock-hero.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  height: 80vh; }
+  height: 100vh; }
   #thinker:after {
     content: "Something Here";
     position: absolute;
@@ -234,11 +244,10 @@ body html {
 
 .third-image {
   position: relative;
-  background-image: url(/wp-admin/images/nyc-hero.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
-  height: 80vh; }
+  height: 100vh; }
   .third-image:after {
     content: "Hello";
     position: absolute;
@@ -251,7 +260,7 @@ body html {
     font-size: 6em; }
 
 #footer {
-  height: 300px;
+  height: 200px;
   background-color: #f5f5f5; }
 
 @media screen and (max-width: 720px) {
@@ -260,7 +269,6 @@ body html {
     #header #nav-wrap .my-name {
       position: absolute;
       cursor: pointer;
-      height: 100%;
       line-height: 100px;
       left: 30px;
       font-size: 25px; }
@@ -272,6 +280,16 @@ body html {
       line-height: 100px;
       font-size: 30px; }
     #header #nav-wrap .left-menu {
-      display: none; } }
+      display: none; }
+
+  .content-row {
+    height: 350px; } }
+@media screen and (max-width: 500px) {
+  .content-row {
+    height: 400px;
+    width: 100%;
+    position: relative; }
+    .content-row .content-text {
+      padding: 40px; } }
 
 /*# sourceMappingURL=style.css.map */
