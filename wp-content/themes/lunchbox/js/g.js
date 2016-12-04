@@ -1,7 +1,7 @@
 /**
  * Created by Ryan1 on 11/30/16.
  */
-console.log("hello")
+console.log("hello");
 (function(window) {
     'use strict';
 
@@ -83,6 +83,27 @@ $('.burger').on('click', function() {
 $('.close-button').on('click', function() {
     $('#burger-nav').removeClass('active')
 })
+if ( $(window).width() > 720) {
+    $('#burger-nav').removeClass('active')
+}
+
+// Remove Side Menu when desktop if open
+(function($) {
+    var $window = $(window),
+        $id = $('#burger-nav');
+
+    $window.resize(function resize(){
+        if ($window.width() > 720) {
+            return $id.removeClass('active');
+        }
+
+        $html.removeClass('active');
+    }).trigger('resize');
+})(jQuery);
+
+
+
+
 
 // var didScroll;
 // // on scroll, let the interval function know the user has scrolled

@@ -5,23 +5,40 @@
  * Date: 11/17/16
  * Time: 9:05 PM
  */
-
 ?>
 
 <?php get_header(); ?>
-<div id="hero" class"picture" style="background-image:url(<?php the_field('hero_image_1');?>)"></div>
+<?php //First Block ?>
+<div id="hero" class="hero-image" style="background-image:url(<?php the_field('hero_image_1');?>)">
+    <div class="hero-text">
+        <?php the_field('hero_text_1');?>
+    </div>
+</div>
 <div class="content-row">
     <div class="content-text">
         <?php the_field('section_1'); ?>
     </div>
 </div>
-<div id="thinker" class"picture" style="background-image:url(<?php the_field('hero_image_2');?>)"></div>
+
+<?php //Second Block ?>
+<div class="hero-image" style="background-image:url(<?php the_field('hero_image_2');?>)">
+    <div class="hero-text">
+        <?php the_field('hero_text_2');?>
+    </div>
+</div>
 <div class="content-row">
     <div class="content-text">
         <?php the_field('section_2'); ?>
     </div>
 </div>
-<div class="third-image" id="biggity" style="background-image:url(<?php the_field('hero_image_3');?>)"></div>
+
+
+<?php //Third Block ?>
+<div class="hero-image" style="background-image:url(<?php the_field('hero_image_3');?>)">
+    <div class="hero-text">
+        <?php the_field('hero_text_3');?>
+    </div>
+</div>
 <div class="content-row">
     <div class="content-text">
         <?php the_field('section_3'); ?>
