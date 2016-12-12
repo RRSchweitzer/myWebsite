@@ -21,6 +21,7 @@
     <!-- Custom styles for this template -->
     <link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 

@@ -204,7 +204,6 @@ div {
   height: 100vh; }
   .hero-image .hero-text {
     position: absolute;
-    font-weight: bold;
     top: 50%;
     width: 100%;
     text-align: center;
@@ -225,7 +224,8 @@ div {
     .content-row .content-text p {
       display: table-cell;
       vertical-align: middle;
-      text-align: center; }
+      text-align: center;
+      font-size: 1.5em; }
 
 #footer {
   position: relative;

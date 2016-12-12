@@ -252,7 +252,6 @@ div {
   height: 100vh;
   .hero-text {
     position: absolute;
-    font-weight: bold;
     top: 50%;
     width: 100%;
     text-align: center;
@@ -275,6 +274,7 @@ div {
       display: table-cell;
       vertical-align: middle;
       text-align: center;
+      font-size: 1.5em;
     }
   }
 }
