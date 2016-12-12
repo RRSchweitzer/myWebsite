@@ -11,7 +11,7 @@
 <?php /* Template Name: Contact */ ?>
 
 <?php get_header(); ?>
-<div>This is the contact page</div>
 
+<?php the_field('contact_form_7');?>
 
 <?php get_footer(); ?>
