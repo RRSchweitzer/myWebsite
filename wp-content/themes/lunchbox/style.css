@@ -348,5 +348,16 @@ div {
     position: relative; }
     .content-row .content-text {
       padding: 40px; } }
+#contact_body #contact_hero {
+  height: 400px !important; }
+
+#wpcf7-f91-o1 {
+  width: 30%;
+  margin: 40px auto; }
+
+.wpcf7-submit {
+  width: 100% !important; }
+  .wpcf7-submit:hover {
+    background-color: black !important; }
 
 /*# sourceMappingURL=style.css.map */

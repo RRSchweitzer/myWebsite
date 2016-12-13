@@ -12,6 +12,13 @@
 
 <?php get_header(); ?>
 
+    <div id="contact_body">
+        <div id="contact_hero" class="hero-image" style="background-image:url(<?php the_field('contact_hero');?>)">
+            <div class="hero-text">
+                <?php the_field('contact_hero_text');?>
+            </div>
+        </div>
+    </div>
 <?php the_field('contact_form_7');?>
 
 <?php get_footer(); ?>

@@ -244,6 +244,7 @@ div {
 #hero {
   height: calc(100vh - 100px)!important;
 }
+
 .hero-image {
   position: relative;
   background-size: cover;
@@ -426,5 +427,24 @@ div {
     .content-text {
       padding: 40px;
     }
+  }
+}
+
+//Contact CSS
+
+#contact_body {
+  #contact_hero {
+    height: 400px !important;
+  }
+}
+
+#wpcf7-f91-o1 {
+  width: 30%;
+  margin: 40px auto;
+}
+.wpcf7-submit {
+  width: 100% !important;
+  &:hover {
+    background-color: black !important;
   }
 }
