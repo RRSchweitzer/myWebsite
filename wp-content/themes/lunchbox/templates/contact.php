@@ -18,7 +18,10 @@
                 <?php the_field('contact_hero_text');?>
             </div>
         </div>
+        <div>Phone Number: 631-617-1808</div>
+        <div>Email: RR.Schweitzer@gmail.com</div>
     </div>
+
 <?php the_field('contact_form_7');?>
 
 <?php get_footer(); ?>
