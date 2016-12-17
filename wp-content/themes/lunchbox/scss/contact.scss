@@ -1,0 +1,56 @@
+//Contact CSS
+
+#contact_body {
+  #contact_hero {
+    height: 400px !important;
+    background-position: 10% 20%;
+    background-attachment: fixed;
+    background-position: center center;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+#wpcf7-f91-o1 {
+  width: 400px;
+  margin: 40px auto;
+}
+.wpcf7-submit {
+  width: 100% !important;
+  &:hover {
+    background-color: black !important;
+  }
+}
+@media screen and (max-width: 720px) {
+  #contact_body {
+    #contact_hero {
+      background-position: 35% 20%;
+      background-position: center center;
+      background-attachment: fixed;
+      webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      .hero-text{
+        font-size: 100px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  #contact_body {
+    #contact_hero {
+      background-position: 25% 20%;
+      background-attachment: fixed;
+      webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      .hero-text{
+        font-size: 85px;
+      }
+    }
+  }
+}

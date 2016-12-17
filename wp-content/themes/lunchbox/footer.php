@@ -10,19 +10,21 @@
     href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
     rel="stylesheet"  type='text/css'>
         <div id="footer">
-            <a href="#header" class="back-to-top">
-                <span>Top</span>
-            </a>
+            <?php if(is_front_page()): ?>
+                <a href="#header" class="back-to-top">
+                    <span>Top</span>
+                </a>
+            <?php endif; ?>
             <div class="footer-wrapper">
                 <div class="nav">
                     <div class="footer-icon">
-                        <a class="fa fa-codepen" aria-hidden="true"></a>
+                        <a href="http://codepen.io/rrschweitzer" class="fa fa-codepen" aria-hidden="true"></a>
                     </div>
                     <div class="footer-icon">
-                        <a class="fa fa-github"></a>
+                        <a href="https://github.com/RRSchweitzer" class="fa fa-github"></a>
                     </div>
                     <div class="footer-icon">
-                        <a class="fa fa-linkedin"></a>
+                        <a href="https://www.linkedin.com/in/rrschweitzer" class="fa fa-linkedin"></a>
                     </div>
                 </div>
             </div>

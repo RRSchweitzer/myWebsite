@@ -1,49 +1,7 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after {
-  content: '';
-  content: none; }
-
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-div {
-  box-sizing: border-box;
-  font-family: 'Raleway', sans-serif; }
-
-body html {
-  margin: 0 !important;
-  padding: 0 !important; }
-
-div {
-  box-sizing: border-box;
-  font-family: 'Raleway', sans-serif; }
-
 #header {
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 4;
   background-color: white;
   width: 100%;
@@ -108,6 +66,27 @@ div {
     #burger-nav .menu li:hover {
       color: #f1f1f1; }
 
+@media screen and (max-width: 720px) {
+  #header #nav-wrap {
+    height: 100%; }
+    #header #nav-wrap .my-name {
+      position: absolute;
+      cursor: pointer;
+      line-height: 100px;
+      left: 30px;
+      font-size: 25px; }
+    #header #nav-wrap .burger {
+      display: block;
+      position: absolute;
+      cursor: pointer;
+      right: 25px;
+      line-height: 100px;
+      font-size: 30px; }
+    #header #nav-wrap .left-menu {
+      display: none; }
+
+  #burger-nav {
+    display: initial; } }
 #side-nav {
   position: fixed;
   list-style-type: bullets;
@@ -227,6 +206,107 @@ div {
       text-align: center;
       font-size: 1.5em; }
 
+.hero-text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(0, -50%);
+  color: white;
+  font-size: .5em; }
+
+@media screen and (max-width: 500px) {
+  .content-row {
+    height: 400px;
+    width: 100%;
+    position: relative; }
+    .content-row .content-text {
+      padding: 40px; } }
+#contact_body #contact_hero {
+  height: 400px !important;
+  background-position: 10% 20%;
+  background-attachment: fixed;
+  background-position: center center;
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#wpcf7-f91-o1 {
+  width: 400px;
+  margin: 40px auto; }
+
+.wpcf7-submit {
+  width: 100% !important; }
+  .wpcf7-submit:hover {
+    background-color: black !important; }
+
+@media screen and (max-width: 720px) {
+  #contact_body #contact_hero {
+    background-position: 35% 20%;
+    background-position: center center;
+    background-attachment: fixed;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    #contact_body #contact_hero .hero-text {
+      font-size: 100px; } }
+@media screen and (max-width: 500px) {
+  #contact_body #contact_hero {
+    background-position: 25% 20%;
+    background-attachment: fixed;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    #contact_body #contact_hero .hero-text {
+      font-size: 85px; } }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+div {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif; }
+
+body html {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+div {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif; }
+
 #footer {
   position: relative;
   height: 200px;
@@ -308,56 +388,8 @@ div {
           top: 50%;
           transform: translate(-50%, -50%);
           vertical-align: 50px;
-          font-size: 30px; }
-
-@media screen and (max-width: 720px) {
-  #header #nav-wrap {
-    height: 100%; }
-    #header #nav-wrap .my-name {
-      position: absolute;
-      cursor: pointer;
-      line-height: 100px;
-      left: 30px;
-      font-size: 25px; }
-    #header #nav-wrap .burger {
-      display: block;
-      position: absolute;
-      cursor: pointer;
-      right: 25px;
-      line-height: 100px;
-      font-size: 30px; }
-    #header #nav-wrap .left-menu {
-      display: none; }
-
-  #burger-nav {
-    display: initial; }
-
-  .hero-text {
-    position: absolute;
-    font-weight: bold;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    transform: translate(0, -50%);
-    color: white;
-    font-size: .5em; } }
-@media screen and (max-width: 500px) {
-  .content-row {
-    height: 400px;
-    width: 100%;
-    position: relative; }
-    .content-row .content-text {
-      padding: 40px; } }
-#contact_body #contact_hero {
-  height: 400px !important; }
-
-#wpcf7-f91-o1 {
-  width: 30%;
-  margin: 40px auto; }
-
-.wpcf7-submit {
-  width: 100% !important; }
-  .wpcf7-submit:hover {
-    background-color: black !important; }
+          font-size: 30px;
+          text-decoration: none;
+          color: inherit; }
 
 /*# sourceMappingURL=style.css.map */
